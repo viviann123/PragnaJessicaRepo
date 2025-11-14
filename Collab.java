@@ -18,7 +18,7 @@ public class Collab{
 						sum+=arr[i+1][j];
 					if(j<arr.length)
 						sum+=arr[i][j+1];
-					if(sum>17)
+					if(sum>33)
 						return sum;
 				}
 			}
