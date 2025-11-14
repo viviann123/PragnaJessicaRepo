@@ -25,4 +25,15 @@ public class Collab{
 		}
 		return 0;
 	}
+
+	public int evenNum(int[][] arr){
+		for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+				if(arr[i][j] % 2 == 0){
+					return arr[i][j];
+				}
+			}
+		}
+		return 0;
+	}
 }
