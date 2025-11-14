@@ -8,7 +8,7 @@ public class Collab{
 	public int Part2(int[][] arr){
 		for(int i = 0; i<arr.length; i++){
 			for(int j = 0; j< arr[0].length; j++){
-				if(arr[i][j]%2!=0)
+				if(arr[i][j]%2==0)
 					continue;
 				int sum = 0;
 				if(j>0)
@@ -20,7 +20,7 @@ public class Collab{
 				if(j<arr.length)
 					sum+=arr[i][j+1];
 				if(sum>33)
-					return sum;
+					return arr[i][j];
 			}
 		}
 		return 0;
